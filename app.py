@@ -4,14 +4,10 @@ import torchvision
 import numpy as np
 from PIL import Image
 
-# Face masks
+# Load model weights
 model = torch.hub.load('ultralytics/yolov5', 'custom', "model_weights/face_masks_partial.pt")
 
-# Animals
-# model = torch.hub.load('ultralytics/yolov5', 'custom', "model_weights/datasets_1000_41class.pt",force_reload=True)
-
-
-
+# Define a yolo prediction function
 def yolo(im, size=640):
     g = (size / max(im.size))  # gain
     im = im.resize((int(x * g) for x in im.size), Image.ANTIALIAS)  # resize
