@@ -30,3 +30,7 @@ mv images/test/* images/test/images
 mv images/train/* images/train/images
 mv images/valid/* images/validimages
 ```
+
+## Another face mask dataset
+
+[This one looks better than kaggle](https://mvrigkas.github.io/FaceMaskDataset/)
