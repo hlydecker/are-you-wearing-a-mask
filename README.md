@@ -1,9 +1,11 @@
 # are you wearing a mask?
 
-![Batman](batman.png)
-**Figure 1:** An example prediction from a model trained on version 5 of the face masks ensemble dataset. This model was able to produce entertaining predictions like that batman is wearing a mask, however this reveals that the model is perhaps learning the wrong thing. From this example we can see that the model thinks that if the top half of a face an the bottom half are different, there might be a mask. Additional data was added to the dataset, and augmentations were made to produce version 8, which was able to address these pitfalls.
+**Demo workflow for fine tuning an object detection model on a custom dataset and deploying a prediction web app.**
 
-Demo workflow for fine tuning an object detection model on a custom dataset and deploying a prediction web app.
+
+![Batman](batman.png)
+
+**Figure 1:** An example prediction from a model trained on version 5 of the face masks ensemble dataset. This model was able to produce entertaining predictions like that batman is wearing a mask, however this reveals that the model is perhaps learning the wrong thing. From this example we can see that the model thinks that if the top half of a face an the bottom half are different, there might be a mask. Additional data was added to the dataset, and augmentations were made to produce version 8, which was able to address these pitfalls.
 
 ## Setup
 
