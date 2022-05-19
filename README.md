@@ -30,6 +30,9 @@ To fine tune the model for this app, I created a dataset by combining a few face
 
 ## Results (WIP)
 
+| Dataset | Images | Model | Training Time | mAP 0.5 | mAP 0.5:0.95 | Precision | Recall |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Face Masks v8 | 27,000 | YOLOv5s | 3.5 hrs | 94 | 53 | 93 | 89 |
 ## Acknowledgements (WIP)
 
 ## References (WIP)
