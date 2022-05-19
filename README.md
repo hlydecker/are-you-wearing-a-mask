@@ -44,11 +44,11 @@ To fine tune the model for this app, I created a dataset by combining a few face
 
 #### Validation Examples
 
-Validation labels:
+Labels:
 
 ![Val labels](content/val_batch2_labels.jpg)
 
-Validation predictions:
+Predictions:
 
 ![Val predictions](content/val_batch2_pred.jpg)
 
