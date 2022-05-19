@@ -50,7 +50,7 @@ Validation labels:
 
 Validation predictions:
 
-![Val predictions](content/val_batch2_labels.jpg)
+![Val predictions](content/val_batch2_preds.jpg)
 
 
 ## Acknowledgements (WIP)
