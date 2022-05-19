@@ -30,9 +30,16 @@ To fine tune the model for this app, I created a dataset by combining a few face
 
 ## Results (WIP)
 
+### Summary
+
 | Dataset | Images | Model | Training Time | mAP 0.5 | mAP 0.5:0.95 | Precision | Recall |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Face Masks v8 | 27,000 | YOLOv5s | 3.5 hrs | 94 | 53 | 93 | 89 |
+
+### Face Masks Detector v2 - trained on face masks v8 dataset
+
+![Results](content/results.png)
+
 ## Acknowledgements (WIP)
 
 ## References (WIP)
