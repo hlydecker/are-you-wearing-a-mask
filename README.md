@@ -38,7 +38,20 @@ To fine tune the model for this app, I created a dataset by combining a few face
 
 ### Face Masks Detector v2 - trained on face masks v8 dataset
 
+#### Metrics
+
 ![Results](content/results.png)
+
+#### Validation Examples
+
+Validation labels:
+
+![Val labels](content/val_batch2_labels.jpg)
+
+Validation predictions:
+
+![Val predictions](content/val_batch2_labels.jpg)
+
 
 ## Acknowledgements (WIP)
 
