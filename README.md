@@ -32,9 +32,9 @@ To fine tune the model for this app, I created a dataset by combining a few face
 
 ### Summary
 
-| Dataset | Images | Model | Training Time | mAP 0.5 | mAP 0.5:0.95 | Precision | Recall |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Face Masks v8 | 27,000 | YOLOv5s | 3.5 hrs | 94 | 53 | 93 | 89 |
+| Model | Dataset | Images | Checkpoint | Training Time | mAP 0.5 | mAP 0.5:0.95 | Precision | Recall |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| face_masks_v8.pt | Face Masks v8 | 27,000 | YOLOv5s | 3.5 hrs | 94 | 53 | 93 | 89 |
 
 ### Face Masks Detector v2 - trained on face masks v8 dataset
 
