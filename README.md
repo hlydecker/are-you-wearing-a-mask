@@ -19,6 +19,10 @@ A persistant issue throughout the COVID-19 pandemic has been modelling and estim
 
 Over the last decade there have been massive strides forward in developing and applying computer vision algorithms into the real world. This progress has been driven by revolutions in how to accelerate neural network compution through the use of graphics processing units. 
 
+### Face Masks Datasets
+
+Computer vision models incorporate some sort of optimizer function at the end which will direct the model towards the easiest and simplest solution. 
+
 ## Setup (WIP)
 
  Create a conda environment for our project, with Python 3.9.
