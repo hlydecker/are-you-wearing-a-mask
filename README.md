@@ -9,7 +9,15 @@ State of the art model for detecting masked and unmasked faces. Try out the [dem
 
 ## Introduction
 
-Over six million people have died from infections with SARS coronavirus 19 over the last two years, and over 521 million people have contracted this virus in what is the most devestating pandemic since the Spanish flu of the early 20th century. A critical component of responding to the lethal threat of this pandemic has been adopting transmission control behaviours, the most controversial of which has been wearing face masks. Face masks have for centuries been recognized as effective barriers for transmission of disease, even before the advent of modern germ theory. While there is some debate about the exact amoutn of protection provided by face masks, the evidence is clear that in areas where face masks use was widepread, cases and mortalities were reduced.
+### COVID-19 and face masks
+
+Over six million people have died from infections with SARS coronavirus 19 (COVID-19) over the last two years, and over 521 million people have contracted this virus in what is the most devestating pandemic since the Spanish flu of the early 20th century. A critical component of responding to the lethal threat of this pandemic has been adopting transmission control behaviours, the most controversial of which has been wearing face masks. Face masks have for centuries been recognized as effective barriers for transmission of disease, even before the advent of modern germ theory. While there is some debate about the exact amoutn of protection provided by face masks, the evidence is clear that in areas where face masks use was widepread, cases and mortalities were reduced. 
+
+A persistant issue throughout the COVID-19 pandemic has been modelling and estimating transmission of infections from person to person. COVID-19 cases are caused by infection with the SARS-CoV-2 virus, and like most other respiratory viruses in the Coronaviridae family, is spread through respiratory droplets that are released during choughing, sneezing, and speaking. Face masks reduce transmission of SARS-CoV-2 by acting as a filter for air entering and leaving a person's mouth: catching respiratory particals before then can either leave or enter the mask. The degree to which face masks can suppress infection varies depending on the quality of the mask, with some providing far more effective filtration. 
+
+### Artificial Intelligence
+
+Over the last decade there have been massive strides forward in developing and applying computer vision algorithms into the real world. This progress has been driven by revolutions in how to accelerate neural network compution through the use of graphics processing units. 
 
 ## Setup (WIP)
 
