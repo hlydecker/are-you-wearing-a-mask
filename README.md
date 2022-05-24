@@ -1,4 +1,4 @@
-# are you wearing a mask?
+# Are you wearing a mask?
 
 State of the art model for detecting masked and unmasked faces. Try out the [demo](https://huggingface.co/spaces/hlydecker/are-you-wearing-a-mask)!
 
@@ -19,11 +19,15 @@ A persistant issue throughout the COVID-19 pandemic has been modelling and estim
 
 Over the last decade there have been massive strides forward in developing and applying computer vision algorithms into the real world. This progress has been driven by revolutions in how to accelerate neural network compution through the use of graphics processing units. 
 
-### Face Masks Datasets
+### Datasets for Computer Vision
 
 To train a model to detect masked and unmasked faces, we will need a dataset with images and annotations. Model performance generally increases with the size, diversity, and quality of the dataset. A good starting point for dataset size is 3000 images per class. 
 
-Ideally you shoul have a balanced number of images for each class. Models are built to try and find the simplest solution to a problem. If you train a model on 90 images of class A an 10 images of class B, it could get 90% accuracy if it just classified everything as class A.
+Ideally you should have a balanced number of images for each class. Models are built to try and find the simplest solution to a problem. If you train a model on 90 images of class A an 10 images of class B, it could get 90% accuracy if it just classified everything as class A.
+
+### Face Masks Dataset
+
+Creating computer vision datasets from scratch is time consuming and expensive, so instead I created a dataset by combining several publically available datasets from Kaggle. There are many available datasets of human faces, with or without face masks. However each of the available datasets I found had some 
 
 ## Setup (WIP)
 
