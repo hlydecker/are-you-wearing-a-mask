@@ -27,7 +27,7 @@ Ideally you should have a balanced number of images for each class. Models are b
 
 ### Face Masks Dataset
 
-Creating computer vision datasets from scratch is time consuming and expensive, so instead I created a dataset by combining several publically available datasets from Kaggle. There are many available datasets of human faces, with or without face masks. However each of the available datasets I found had some 
+Creating computer vision datasets from scratch is time consuming and expensive, so instead I created a dataset by combining several publically available datasets from Kaggle. There are many available datasets of human faces, with or without face masks. I limited possible datasets to those which had YOLO format object detection annotations. These are individual text files for each image, which contain the class id and relative coordinates and dimensions needed for each bounding box.
 
 ## Setup (WIP)
 
