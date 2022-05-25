@@ -10,8 +10,8 @@ State of the art model for detecting masked and unmasked faces. Try out the [dem
 ## Quick Start:
 
 1. [Face Masks dataset](https://www.kaggle.com/datasets/henrylydecker/face-masks): Kaggle page for the dataset used for training.
-2. [Google Colab](https://colab.research.google.com/drive/18mHO0lgT4W8Mzf6Nu0Kp5kQuByhWJ3N6?usp=sharing) for fine tuning a model.
-3. [Prediction Web App](https://huggingface.co/spaces/hlydecker/are-you-wearing-a-mask)
+2. [Google Colab](https://colab.research.google.com/drive/18mHO0lgT4W8Mzf6Nu0Kp5kQuByhWJ3N6?usp=sharing): For fine tuning a model.
+3. [Web App](https://huggingface.co/spaces/hlydecker/are-you-wearing-a-mask): For making predictions.
 
 ## Introduction
 
