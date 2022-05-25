@@ -7,6 +7,12 @@ State of the art model for detecting masked and unmasked faces. Try out the [dem
 
 **Figure 1:** An example prediction from a model trained on version 5 of the face masks ensemble dataset. This model was able to produce entertaining predictions like that batman is wearing a mask, however this reveals that the model is perhaps learning the wrong thing. From this example we can see that the model thinks that if the top half of a face an the bottom half are different, there might be a mask. Additional data was added to the dataset, and augmentations were made to produce version 8, which was able to address these pitfalls.
 
+## Quick Start:
+
+1. [Face Masks dataset](https://www.kaggle.com/datasets/henrylydecker/face-masks): Kaggle page for the dataset used for training.
+2. [Google Colab](https://colab.research.google.com/drive/18mHO0lgT4W8Mzf6Nu0Kp5kQuByhWJ3N6?usp=sharing) for fine tuning a model.
+3. [Prediction Web App](https://huggingface.co/spaces/hlydecker/are-you-wearing-a-mask)
+
 ## Introduction
 
 ### COVID-19 and face masks
