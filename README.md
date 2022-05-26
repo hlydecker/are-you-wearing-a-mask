@@ -2,6 +2,8 @@
 
 State of the art model for detecting masked and unmasked faces. Try out the [demo](https://huggingface.co/spaces/hlydecker/are-you-wearing-a-mask)!
 
+![Examples](content/examples.png)
+
 ## Quick Start:
 
 1. [Face Masks dataset](https://www.kaggle.com/datasets/henrylydecker/face-masks): Kaggle page for the dataset used for training.
