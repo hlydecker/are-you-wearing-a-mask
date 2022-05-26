@@ -2,11 +2,6 @@
 
 State of the art model for detecting masked and unmasked faces. Try out the [demo](https://huggingface.co/spaces/hlydecker/are-you-wearing-a-mask)!
 
-
-![Batman](content/batman.png)
-
-**Figure 1:** An example prediction from a model trained on version 5 of the face masks ensemble dataset. This model was able to produce entertaining predictions like that batman is wearing a mask, however this reveals that the model is perhaps learning the wrong thing. From this example we can see that the model thinks that if the top half of a face an the bottom half are different, there might be a mask. Additional data was added to the dataset, and augmentations were made to produce version 8, which was able to address these pitfalls.
-
 ## Quick Start:
 
 1. [Face Masks dataset](https://www.kaggle.com/datasets/henrylydecker/face-masks): Kaggle page for the dataset used for training.
@@ -76,6 +71,11 @@ The final model was trained on the University of Sydney's Artemis high performan
 ### Model Iteration
 
 Model training was done in three rounds. When a model training run finished, performance was evaluated on the validation and testing sets. However, out of sample performance was also tested with a series of images selected to test the ability of the model to predict on data that was far outside the domain of the original dataset. Out of sample imagery included images from movies, illustrations, fictional characters, and people with features such as beards that were not present in the training data.
+
+
+![Batman](content/batman.png)
+
+**Figure:** Out of sample data, such as this composite image of scenes from Christopher Nolan's film *Batman Begins* were used to how the model performs on novel unusual scenarios. From this example we can see that the model thinks that if the top half of a face an the bottom half are different, there might be a mask. So it is not identifying Batman's mask on the top of his head, it instead thinks Batman is a black humanoid with pointy ears wearing a flesh coloured face mask.
 
 ### Deployment
 
