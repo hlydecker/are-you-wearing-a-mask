@@ -89,7 +89,7 @@ The best model weights were then integrated into a Python inference web applicat
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | face_masks_v8.pt | Face Masks v8 | 27,000 | YOLOv5s | 3.5 hrs | 94 | 53 | 93 | 89 |
 
-### Face Masks Detector v2 - trained on face masks v8 dataset
+### Face Masks Detector 2.0 - trained on Face Masks v8 dataset
 
 #### Metrics
 
@@ -97,11 +97,11 @@ The best model weights were then integrated into a Python inference web applicat
 
 #### Validation Examples
 
-Labels:
+**Labels:** The final "
 
 ![Val labels](content/val_batch2_labels.jpg)
 
-Predictions:
+**Predictions:**
 
 ![Val predictions](content/val_batch2_pred.jpg)
 
