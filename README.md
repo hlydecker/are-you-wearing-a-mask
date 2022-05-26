@@ -57,13 +57,27 @@ To fine tune the model for this app, I created a dataset by combining a few face
 2. [Face Mask Dataset](https://www.kaggle.com/datasets/aditya276/face-mask-dataset-yolo-format): Another smaller dataset, with 924 images. The quality of this data is generally quite good, but it is not a very diverse dataset. Most imagery is of what appears to be middle aged east asian or caucasian people, without facial hear or any other non-mask face coverings.
 3. [COVID-19 Face Covering](https://www.kaggle.com/datasets/karm1a/covid19-face-coverings-at-yolov4-format): A large dataset, with 9,106 images. A major advantage of this dataset is that it contains a wide variety of partially obscured or covered faces. This provides more examples of all the possible non-mask things that could cover a face. The imagery is also quite diverse, with many screen grabs from films and random media. The size and diversity of this dataset are a major positive. 
 
-## Methods (WIP)
+## Methods 
+
+### Data Preperation
 
 I created a new face masks object detection dataset by compositing together three publically available face masks object detection datasets on Kaggle that used the YOLO annotation format. To combine the datasets, I used Roboflow. All three original datasets had different class dictionaries, so I recoded the classes into two classes: "Mask" and "No Mask". One dataset included a class for incorrectly worn face masks, images with this class were removed from the dataset. Approximately 50 images had corrupted annotations, so they were manually re-annotated in the Roboflow platform. The final dataset includes 9,982 images, with 24,975 annotated instances. Image resolution was on average 0.49 mp, with a median size of 750 x 600 pixels.
 
 To improve model performance on out of sample data, I used 90 degree rotational augmentation. This saved duplicate versions of each image for 90, 180, and 270  degree rotations. I then split the data into 85% training, 10% validation, and 5% testing. Images with classes that were removed from the dataset were removed, leaving 16,000 images in training, 1,900 in validation, and 1,000 in testing.
 
-An object detection model was then fine tuned on this dataset. I used the Python implementation of Ultralytics' YOLOv5, and fine tuned from the YOLOv5s.pt checkpoints. Fine tuning used stock hyperparameters, with an image size of 640p, batch size of 64 for 300 epochs. The model was trained on the University of Sydney's Artemis high performance computer, using one NVIDIA V100-SXM2-16GB GPU, 36 Intel Xeon Gold 6140 2.30GHz CPU cores, and 64 GB of RAM mounted in a Dell EMC PowerEdge C4140 server. Training stopped early after 3 hours and 34 minutes, as model performance had peaked at epoch 44 and had not improved for 100 epochs. Model and system performance were monitored and assessed using Weights & Biases.
+### Model Training
+
+An object detection model was then fine tuned on this dataset. I used the Python implementation of Ultralytics' YOLOv5, and fine tuned from the YOLOv5s.pt checkpoints. Fine tuning used stock hyperparameters, with an image size of 640p, batch size of 64 for 300 epochs. 
+
+Prototyping was done in a Jupyter Notebook on a Google Colab GPU Virtual Machine equipped with an NVIDIA T4. 
+
+The final model was trained on the University of Sydney's Artemis high performance computer, using one NVIDIA V100-SXM2-16GB GPU, 36 Intel Xeon Gold 6140 2.30GHz CPU cores, and 64 GB of RAM mounted in a Dell EMC PowerEdge C4140 server. Training stopped early after 3 hours and 34 minutes, as model performance had peaked at epoch 44 and had not improved for 100 epochs. Model and system performance were monitored and assessed using Weights & Biases.
+
+### Model Iteration
+
+Model training was done in three rounds. When a model training run finished, performance was evaluated on the validation and testing sets. However, out of sample performance was also tested with a series of images selected to test the ability of the model to predict on data that was far outside the domain of the original dataset. Out of sample imagery included images from movies, illustrations, fictional characters, and people with features such as beards that were not present in the training data.
+
+### Deployment
 
 The best model weights were then integrated into a Python inference web application, built with Gradio and deployed on Huggingface Spaces.
 
