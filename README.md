@@ -100,9 +100,9 @@ The best model weights were then integrated into a Python inference web applicat
 
 ### Summary
 
-| Model | Dataset | Images | Checkpoint | Training Time | mAP 0.5 | mAP 0.5:0.95 | Precision | Recall |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| face_masks_v8.pt | Face Masks v8 | 27,000 | YOLOv5s | 3.5 hrs | 94 | 53 | 93 | 89 |
+| Model | Dataset | Training Images | Batch Size | Epochs | Checkpoint | Training Time | mAP 0.5 | mAP 0.5:0.95 | Precision | Recall |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| face_masks_v8.pt | Face Masks v8 | 16,200 | 64 | 300 | YOLOv5s | 3.5 hrs | 94 | 53 | 93 | 89 |
 
 ### Face Masks Detector 2.0 - trained on Face Masks v8 dataset
 
