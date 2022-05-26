@@ -78,7 +78,8 @@ The final model was trained on the University of Sydney's Artemis high performan
 
 ### Model Iteration
 
-Model training was done in three rounds. When a model training run finished, performance was evaluated on the validation and testing sets. However, out of sample performance was also tested with a series of images selected to test the ability of the model to predict on data that was far outside the domain of the original dataset. Out of sample imagery included images from movies, illustrations, fictional characters, and people with features such as beards that were not present in the training data.
+
+Model performance was assessed and monitored using Weights & Biases. Mean average precision (mAP 0.5 and mAP 05:0.95), precision, and recall were used to identify the best performing model, and model performance was examined visually using batch prediction validation images. However, out of sample performance was also tested with a series of images selected to test if the model was overfit, and if it had the ability of the model to predict on data that was far outside the domain of the original dataset. Out of sample imagery included images of people with features different from the training dataset (e.g. beards), fictional humanoid characters from films, illustrated human forms in a variety of art styles, anthropmorphic fictional non human characters, and non human animals.
 
 
 ![Batman](content/batman.png)
