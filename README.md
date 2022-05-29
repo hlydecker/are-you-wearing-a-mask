@@ -46,17 +46,51 @@ Creating computer vision datasets from scratch is time consuming and expensive, 
 
 ## Setup (WIP)
 
- Create a conda environment for our project, with Python 3.9.
+### System Requirements
+
+As with most deep learning methods, you should use a device that is equipped with a GPU, and specifically I recommend using an NVIDIA device with CUDA. 
+This workflow can work on Windows, MacOS, or Linux.
+
+### Interactive Workflow (Google Colab)
+
+For a detailed interactive demonstration of the workflow, check out the [Google Colab](https://colab.research.google.com/drive/18mHO0lgT4W8Mzf6Nu0Kp5kQuByhWJ3N6?usp=sharing) jupyter notebook. 
+
+### Basic Instructions (MacOS/Linux)
+
+These steps should work for any MacOS or Linux system. 
+They should also work for Windows systems if you have correctly installed a conda version on your system and have added it to your PATH, but I have not tested these specific steps on a Windows device.
+
+1. Create a conda environment for our project, with Python 3.9.
  
 ```bash
 conda create -n masks python=3.9
 conda activate masks
 ```
-Install requirements.
+
+2. Install requirements.
 
 ```bash
-pip install gradio torch pandas numpy torchvision wandb jupyterlab
+pip install gradio torch pandas numpy torchvision wandb jupyterlab kaggle
 ```
+
+3. Train model
+
+```bash
+python train.py --img 640 --batch 64 --epochs 300 --data face_masks.yaml --weights yolov5s.pt
+```
+
+4. Evaluate model performance
+
+```bash
+python val.py --data face_masks.yaml --task "val"
+```
+
+5. Make predictions
+
+```bash
+python detect.py --source "image_dir/" --weights <your fitted weights>
+```
+
 
 ## Training Data (WIP)
 
@@ -65,6 +99,8 @@ To fine tune the model for this app, I created a dataset by combining a few face
 1. [Face Mask Detection](https://www.kaggle.com/datasets/andrewmvd/face-mask-detection): A small dataset with 853 images. This one has a nice diverse mix of images and people, and three classes: no mask, mask, and mask worn incorrectly. Masks is the by far the most common class, with the most images and instances. Mask worn incorrectly is much less common, and from some testing including this class greatly reduces performance. We can kind of live with some degree of class imbalance, but remember our model tries to find the easiest solution so it will basically learn to ignore a super rare class. For this reason, I excluded images with "incorrectly worn mask" annotations. A caveat with this dataset is that most people in it appear to be young adult to middle aged east asian or caucasian.
 2. [Face Mask Dataset](https://www.kaggle.com/datasets/aditya276/face-mask-dataset-yolo-format): Another smaller dataset, with 924 images. The quality of this data is generally quite good, but it is not a very diverse dataset. Most imagery is of what appears to be middle aged east asian or caucasian people, without facial hear or any other non-mask face coverings.
 3. [COVID-19 Face Covering](https://www.kaggle.com/datasets/karm1a/covid19-face-coverings-at-yolov4-format): A large dataset, with 9,106 images. A major advantage of this dataset is that it contains a wide variety of partially obscured or covered faces. This provides more examples of all the possible non-mask things that could cover a face. The imagery is also quite diverse, with many screen grabs from films and random media. The size and diversity of this dataset are a major positive. 
+
+You can download the completed ensemble Face Masks dataset on [Kaggle](https://www.kaggle.com/datasets/henrylydecker/face-masks).
 
 ## Methods 
 
