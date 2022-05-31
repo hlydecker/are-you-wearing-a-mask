@@ -15,6 +15,7 @@ Real time detection of masked and unmasked faces could be a valuable tool for mo
 1. [Face Masks dataset](https://www.kaggle.com/datasets/henrylydecker/face-masks): Kaggle page for the dataset used for training.
 2. [Google Colab](https://colab.research.google.com/drive/18mHO0lgT4W8Mzf6Nu0Kp5kQuByhWJ3N6?usp=sharing): For fine tuning a model.
 3. [Web App](https://huggingface.co/spaces/hlydecker/are-you-wearing-a-mask): For making predictions.
+4. [Slides](https://github.com/hlydecker/are-you-wearing-a-mask/blob/main/mask_slides.pdf): from the University of Sydney's Coding Fest 2022.
 
 ## Introduction
 
