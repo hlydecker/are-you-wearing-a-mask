@@ -6,9 +6,13 @@ State of the art model for real time detection of masked and unmasked faces. Try
 
 **Figure 1:** Fast and accurate predictions on images similar to the training dataset, as well as impressive performance on a range of images far outside the domain of the training dataset. This demonstrates that the model has effectively learned what a masked and unmasked face looks like, and is highly adaptable and robust when dealing with novel scenarios.
 
-## Abstract
+## Abstract (for the WIP publication)
 
 Real time detection of masked and unmasked faces could be a valuable tool for monitoring and undestanding the transmission of known and yet to be discovered infectious diseases. Advances in deep neural networks and computer hardware have led to the development of numerous computer vision algorithms which are trained on massive general purpose datasets and are able to provide accurate and fast predictions. Using transfer learning, we can apply these general purpose computer vision models to specific problems, such as detecting masked and unmasked faces. I fine tuned a state of the art pretrained object detection model on a new composite dataset, producing what is now the state of the art object detection model for identifying masked and unmasked faces. This model performs well on individuals, large crowds, a diverse range of human subjects, as well providing impressive performance on out of sample domains such as animation, non human animals, and fictional characters. The ever accelerating performance of computer vision models, availability of data, and ease of training means that applying computer vision in practical applications (such as public health monitoring) is more feasible than ever before. However we must observe caution lest these powerful tools be used to discriminate, profile, or deny freedoms from the public.
+
+## Citation (WIP)
+
+Lydecker, H.W. Real-time detection of masked and unmasked faces. Preprint(soon) and publication(less soon).
 
 ## Quick Start:
 
