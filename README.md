@@ -23,25 +23,11 @@ Lydecker, H.W. Real-time detection of masked and unmasked faces. Preprint(soon) 
 
 ## Introduction
 
-### COVID-19 and face masks
+### COVID-19, face masks, and AI
 
-Over six million people have died from infections with SARS coronavirus 19 (COVID-19) over the last two years, and over 521 million people have contracted this virus in what is the most devastating pandemic since the Spanish flu of the early 20th century. A critical component of responding to the lethal threat of this pandemic has been adopting transmission control behaviours, the most controversial of which has been wearing face masks. Face masks have for centuries been recognized as effective barriers for transmission of disease, even before the advent of modern germ theory. While there is some debate about the exact amount of protection provided by face masks, the evidence is clear that in areas where face masks use was widespread, cases and moralities were reduced.
+COVID-19 cases are caused by infection with the SARS-CoV-2 virus, and like most other respiratory viruses in the Coronaviridae family, is spread through respiratory droplets that are released during coughing, sneezing, and speaking. Face masks reduce transmission of SARS-CoV-2 by acting as a filter for air entering and leaving a person's mouth: catching respiratory particles before then can either leave or enter the mask. 
 
-A persistent issue throughout the COVID-19 pandemic has been modelling and estimating transmission of infections from person to person. COVID-19 cases are caused by infection with the SARS-CoV-2 virus, and like most other respiratory viruses in the Coronaviridae family, is spread through respiratory droplets that are released during coughing, sneezing, and speaking. Face masks reduce transmission of SARS-CoV-2 by acting as a filter for air entering and leaving a person's mouth: catching respiratory particles before then can either leave or enter the mask. The degree to which face masks can suppress infection varies depending on the quality of the mask, with some providing far more effective filtration.
-
-### Artificial Intelligence
-
-Over the last decade there have been massive strides forward in developing and applying computer vision algorithms into the real world. This progress has been driven by revolutions in how to accelerate neural network compution through the use of graphics processing units. 
-
-### Datasets for Computer Vision
-
-To train a model to detect masked and unmasked faces, we will need a dataset with images and annotations. Model performance generally increases with the size, diversity, and quality of the dataset. A good starting point for dataset size is 3000 images per class. 
-
-Ideally you should have a balanced number of images for each class. Models are built to try and find the simplest solution to a problem. If you train a model on 90 images of class A an 10 images of class B, it could get 90% accuracy if it just classified everything as class A.
-
-### Face Masks Dataset
-
-Creating computer vision datasets from scratch is time consuming and expensive, so instead I created a dataset by combining several publically available datasets from Kaggle. There are many available datasets of human faces, with or without face masks. I limited possible datasets to those which had YOLO format object detection annotations. These are individual text files for each image, which contain the class id and relative coordinates and dimensions needed for each bounding box.
+Public health agencies around the world have worked hard to model and predict the spread of COVID-19, but an important variable that has been difficult to measure is the extent to which people wear face masks. One way to measure this is to use street safety and security cameras to record padestrian activity, and some sort of computer vision model to identify if people are wearing masks or not. In this repository, I'll show how you can build a model that can do exactly that.
 
 ## Setup (WIP)
 
