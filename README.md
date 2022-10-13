@@ -132,7 +132,7 @@ The best model weights were then integrated into a Python inference web applicat
 
 #### Validation Examples
 
-**Labels:** The final "
+**Labels:** 
 
 ![Val labels](content/val_batch2_labels.jpg)
 
