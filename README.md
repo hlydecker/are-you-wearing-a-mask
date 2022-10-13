@@ -110,7 +110,7 @@ Model performance was assessed and monitored using Weights & Biases. Mean averag
 
 ![Batman](content/batman.png)
 
-**Figure:** Out of sample data, such as this composite image of Christian Bale as Batman in Christopher Nolan's film *Batman Begins* was used to how the model performs on novel unusual scenarios. From this example we can see that the model thinks that if the top half of a face an the bottom half are different, there might be a mask. So it is not identifying Batman's mask on the top of his head, it instead thinks Batman is a black humanoid with pointy ears wearing a flesh coloured face mask.
+**Figure:** Out of sample data, such as this composite image of Christian Bale as Batman in Christopher Nolan's film *Batman Begins* was used to test how the model performs on novel unusual scenarios. From this example we can see that the model thinks that if the top half of a face and the bottom half are different, there might be a mask. So it is not identifying Batman's mask on the top of his head, it instead thinks Batman is a black humanoid with pointy ears wearing a flesh coloured face mask. 
 
 ### Deployment
 
