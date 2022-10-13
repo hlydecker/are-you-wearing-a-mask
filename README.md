@@ -1,6 +1,6 @@
 # Are you wearing a mask?
 
-State of the art model for real time detection of masked and unmasked faces. Try out the [demo](https://huggingface.co/spaces/hlydecker/are-you-wearing-a-mask)!
+Real time detection of masked and unmasked faces. Try out the [demo](https://huggingface.co/spaces/hlydecker/are-you-wearing-a-mask)!
 
 ![Examples](content/examples.png)
 
