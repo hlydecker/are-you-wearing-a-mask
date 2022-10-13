@@ -4,7 +4,7 @@ State of the art model for real time detection of masked and unmasked faces. Try
 
 ![Examples](content/examples.png)
 
-**Figure 1:** Fast and accurate predictions on images similar to the training dataset, as well as impressive performance on a range of images far outside the domain of the training dataset. This demonstrates that the model has effectively learned what a masked and unmasked face looks like, and is highly adaptable and robust when dealing with novel scenarios.
+**Figure 1:** Fast and accurate predictions on images similar to the training dataset, as well as impressive performance on a range of images far outside the domain of the training dataset. This demonstrates that the model has effectively learned what a masked and unmasked face looks like, and is highly adaptable and robust when dealing with novel scenarios. Unfortnately, Bugs Bunny's face is sufficiently distinct that the model does not recognize it as a face.
 
 ## Abstract (for the WIP publication)
 
