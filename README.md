@@ -128,6 +128,8 @@ The best model weights were then integrated into a Python inference web applicat
 
 #### Metrics
 
+Excellent performance on all metrics.
+
 ![Results](content/results.png)
 
 #### Validation Examples
@@ -140,6 +142,7 @@ The best model weights were then integrated into a Python inference web applicat
 
 ![Val predictions](content/val_batch2_pred.jpg)
 
+The model correctly identified masked and unmasked faces in almost every instance. The one incorrect identification is the person holding their hand over their face, with some of their hair, which was identified as a mask. 
 
 ## Acknowledgements (WIP)
 
