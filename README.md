@@ -144,3 +144,7 @@ The best model weights were then integrated into a Python inference web applicat
 ## Acknowledgements (WIP)
 
 ## References (WIP)
+
+## Fun Extras (WIP)
+
+![BTS](content/bts_nnet.gif)
